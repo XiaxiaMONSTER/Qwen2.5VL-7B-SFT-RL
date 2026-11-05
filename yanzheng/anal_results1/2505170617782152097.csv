@@ -1,0 +1,2 @@
+﻿seq_start,seq_end,start_time,end_time,duration_s,state,start_speed,end_speed,avg_speed,max_speed,min_speed,delta_v,mean_acc,displacement,dx,dy,turn_label,heading_start,heading_end,turn_angle_deg,heading_rate
+0,899,1747432351.1,1747432410.98,59.89,匀速,9.857,7.664,10.991,13.258,7.664,-2.193,-0.037,663.249,-113.752,653.422,右转,0.0,-50.2,-50.2,-0.838

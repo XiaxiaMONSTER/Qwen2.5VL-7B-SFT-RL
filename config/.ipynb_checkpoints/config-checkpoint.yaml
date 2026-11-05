@@ -1,0 +1,55 @@
+api_key: ""
+
+paths:
+  raw_dataset: "/mnt/workspace/xiayuxuan/Qwen_TF/datasets/images"
+  raw_annotations: "/mnt/workspace/xiayuxuan/Qwen_TF/datasets/annotations"
+  font: ["/mnt/workspace/xiayuxuan/Qwen_TF/fonts/Arial Unicode MS.ttf"]
+
+data:
+  images_folder: "/mnt/workspace/xiayuxuan/Qwen_TF/Project-2_trace_sft_prompt_v2/data/images"
+  annotations_folder: "/mnt/workspace/xiayuxuan/Qwen_TF/Project-2_trace_sft_prompt_v2/data/annotations"
+  instructions_folder: "/mnt/workspace/xiayuxuan/Qwen_TF/Project-2_trace_sft_prompt_v2/data/instructions"
+  processed_image_folder: "/mnt/workspace/xiayuxuan/Qwen_TF/Project-2_trace_sft_prompt_v2/data/processed"
+
+result:
+  model_output: "/mnt/workspace/xiayuxuan/Qwen_TF/Project-2_trace_sft_prompt_v2/results/model_output"
+  evaluation_result: "/mnt/workspace/xiayuxuan/Qwen_TF/Project-2_trace_sft_prompt_v2/results/evaluation_results"
+  cot_visualization: "/mnt/workspace/xiayuxuan/Qwen_TF/Project-2_trace_sft_prompt_v2/results/cot_visualization"
+
+description:
+  scene: "/mnt/workspace/xiayuxuan/Qwen_TF/Project-2_trace_sft_prompt_v2/results/scene_description.json"
+  traffic_light: "/mnt/workspace/xiayuxuan/Qwen_TF/Project-2_trace_sft_prompt_v2/results/traffic_light_description.json"
+
+translation_maps:
+  scene:
+    单向路口前: "in front of a one-way intersection"
+    普通/大型路口前: "in front of a normal/large intersection"
+    道路中: "on the road"
+    正在经过路口: "passing the intersection"
+  type:
+    路口处机动车红绿灯: "traffic lights for motor vehicles at intersections"
+    路口处其他红绿灯: "Other traffic lights at intersections"
+    倒计时灯: "countdown lights"
+    车道信号灯: "lane signal lights"
+    其他: "other types of traffic lights"
+  pictogram:
+    箭头左: "left-arrow"
+    箭头右: "right-arrow"
+    箭头掉头: "U-turn-arrow"
+    箭头直行: "straight-arrow"
+    圆形: "circle"
+    倒计时: "countdown"
+    非机动车: "non-motor-vehicle"
+    行人: "pedestrian"
+    无法判断: "unknown"
+  attachment:
+    横杆: "horizontal bar"
+    竖杆: "vertical poles"
+    桥面: "bridge deck"
+    其他: "other dependencies"
+  indication:
+    直行: "straight"
+    左: "left-turn"
+    右: "right-turn"
+    掉头: "U-turn"
+    无法判断: "unknown"
